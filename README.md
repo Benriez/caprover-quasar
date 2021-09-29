@@ -24,3 +24,11 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+
+
+# Build .tar file
+tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
+
+
+# Deploy with Caprover
+caprover deploy -t ./deploy.tar

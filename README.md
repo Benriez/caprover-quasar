@@ -33,6 +33,7 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
 ```
 
+Note: If your build output is in a different folder than dist/spa you need to change the COPY ./dist/spa /app into COPY ./dist/[my-output-folder] /app
 
 
 # Deploy with Caprover

@@ -27,8 +27,14 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 
 
 # Build .tar file
+```bash
 tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
+```
+
 
 
 # Deploy with Caprover
+```bash
 caprover deploy -t ./deploy.tar
+```
+

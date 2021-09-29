@@ -33,13 +33,13 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
 ```
 
-Note: If your build output is in a different folder than dist/spa you need to change the COPY ./dist/spa /app into COPY ./dist/[my-output-folder] /app
-
-
 # Deploy with Caprover
 ```bash
 caprover deploy -t ./deploy.tar
 ```
+
+Note: If your build output is in a different folder than dist/spa you need to change the COPY ./dist/spa /app into COPY ./dist/[my-output-folder] /app
+Tip: Add deploy.tar to your .gitignore to avoid accidentally pushing it
 
 See [caprover deploy app](https://caprover.com/docs/recipe-deploy-create-react-app.html).
 

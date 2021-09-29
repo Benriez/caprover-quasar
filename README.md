@@ -38,3 +38,5 @@ tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
 caprover deploy -t ./deploy.tar
 ```
 
+See [caprover deploy app](https://caprover.com/docs/recipe-deploy-create-react-app.html).
+

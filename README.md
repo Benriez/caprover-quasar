@@ -1,3 +1,5 @@
+![alt text](https://github.com/Benriez/caprover-quasar/blob/master/quasar_app.png?raw=true)
+
 # Quasar App + Caprover (caprover-quasar-docker)
 
 A Quasar Framework app

@@ -1,4 +1,4 @@
-# Quasar App (caprover-quasar)
+# Quasar App + Caprover (caprover-quasar-docker)
 
 A Quasar Framework app
 
@@ -24,3 +24,19 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+
+
+# Build .tar file
+```bash
+tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
+```
+
+
+
+# Deploy with Caprover
+```bash
+caprover deploy -t ./deploy.tar
+```
+
+See [caprover deploy app](https://caprover.com/docs/recipe-deploy-create-react-app.html).
+

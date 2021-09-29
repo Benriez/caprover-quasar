@@ -39,7 +39,7 @@ caprover deploy -t ./deploy.tar
 ```
 
 Note: If your build output is in a different folder than dist/spa you need to change the "COPY ./dist/spa /app" command into "COPY ./dist/[my-output-folder] /app"
-in the captain definitin file (line 5).
+in the captain definition file (line 5).
 
 Tip: Add deploy.tar to your .gitignore to avoid accidentally pushing it
 

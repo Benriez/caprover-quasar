@@ -1,4 +1,4 @@
-# Quasar App (caprover-quasar)
+# Quasar App + Caprover (caprover-quasar-docker)
 
 A Quasar Framework app
 

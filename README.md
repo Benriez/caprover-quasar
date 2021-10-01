@@ -1,4 +1,6 @@
-# Quasar App + Caprover (caprover-quasar-docker)
+![alt text](https://github.com/Benriez/caprover-quasar/blob/master/quasar_app.png?raw=true)
+
+# Quasar App + Caprover Template
 
 A Quasar Framework app
 
@@ -31,12 +33,15 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./dist/spa/*
 ```
 
-
-
 # Deploy with Caprover
 ```bash
 caprover deploy -t ./deploy.tar
 ```
+
+Note: If your build output is in a different folder than dist/spa you need to change the "COPY ./dist/spa /app" command into "COPY ./dist/[my-output-folder] /app"
+in the captain-definition file (line 5).
+
+Tip: Add deploy.tar to your .gitignore to avoid accidentally pushing it
 
 See [caprover deploy app](https://caprover.com/docs/recipe-deploy-create-react-app.html).
 

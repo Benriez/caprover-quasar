@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "dockerfileLines": [
-    "FROM socialengine/nginx-spa:latest", 
+    "FROM tobi312/rpi-nginx:latest", 
     "COPY ./dist/spa /app", 
     "RUN chmod -R 777 /app"
   ]
